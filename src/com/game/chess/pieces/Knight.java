@@ -17,7 +17,7 @@ public class Knight extends Piece {
 
     @Override
     public boolean canAttack(Position destPosition) {
-        if (getPosition() == destPosition) return false;
+        if (getPosition().equals(destPosition)) return false;
 
         return isValidKnightMove(destPosition);
     }

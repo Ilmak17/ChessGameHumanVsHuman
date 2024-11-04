@@ -24,6 +24,4 @@ public interface Board {
     boolean isCheckmate(Color color);
 
     boolean isMoveLeavingKingInCheck(Piece piece, Position position);
-
-    Piece getThreatingPiece(Color color);
 }

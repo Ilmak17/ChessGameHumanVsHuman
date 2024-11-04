@@ -117,15 +117,6 @@ public class BoardImpl implements Board {
         return pieces;
     }
 
-    @Override
-    public Piece getThreatingPiece(Color color) {
-        Piece piece = getPieces().get(threateningPieceIdx);
-        if (piece.getColor().equals(color)) {
-            return piece;
-        }
-        return null;
-    }
-
     private List<Position> getBlockingPositions(Position kingPos, Position threatPos) {
         List<Position> blockingPositions = new ArrayList<>();
 
